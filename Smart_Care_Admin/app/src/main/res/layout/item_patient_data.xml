@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:id="@+id/item_background"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_height="165dp">
+
+
+
+        <LinearLayout
+
+            android:background="@color/white"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/gifImageView"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="32dp"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+
+
+
+
+            <TextView
+
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/tt_item_name"
+                android:drawableLeft="@drawable/ic_name"
+                android:layout_marginRight="5dp"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:text="Salma Sultana"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"/>
+
+
+            <TextView
+
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/tt_item_tem"
+                android:drawableLeft="@drawable/ic_heat"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:text="Temp: 98.6 F"/>
+
+            <TextView
+
+                android:textColor="@android:color/black"
+                android:id="@+id/tt_item_bp"
+                android:drawableLeft="@drawable/ic_heart"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:text=" Heart Rate: "/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

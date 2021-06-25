@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".PatientDetails">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+
+
+        <TextView
+
+            android:background="@drawable/gradian_background"
+            android:id="@+id/tv_patient_details"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat"
+            android:text="Patient's Details"
+            android:paddingLeft="40dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/back_patient_details"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:paddingBottom="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginTop="8dp"
+                app:cardElevation="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/tv_patient_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Weight: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_patient_age" />
+
+
+
+
+
+                    <TextView
+                        android:layout_marginEnd="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/tv_patient_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Age: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_patient_name" />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_patient_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Gender: "
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.895"
+                        app:layout_constraintStart_toEndOf="@+id/tv_patient_age"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_patient_name" />
+
+
+
+                    <TextView
+                        android:id="@+id/patinet_phone"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="16sp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/ic_call"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Phone :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                app:cardElevation="7dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+
+                        android:id="@+id/status"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <pl.droidsonroids.gif.GifImageView
+
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/gifImageView"
+                        android:layout_height="40dp"
+
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+                        android:layout_width="80dp"
+
+                        android:src="@drawable/wev"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+
+                        android:id="@+id/tv_sensor_reading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Sensor Reading: "
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:text="Normal Value"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_sensor_reading" />
+
+                    <TextView
+                        android:id="@+id/tv_current"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Current Value"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.585"
+                        app:layout_constraintStart_toEndOf="@+id/tv_normal"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_sensor_reading" />
+
+
+
+                    <TextView
+
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/tv_current_heartRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="123dp"
+                        android:layout_marginEnd="16dp"
+                        android:drawableLeft="@drawable/ic_heart"
+                        android:fontFamily="@font/montserrat"
+                        android:text=" BPM: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.56"
+                        app:layout_constraintStart_toEndOf="@+id/tv_normal_heartRate"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_current_temp" />
+
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_heat"
+                        android:id="@+id/tv_current_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="  Temp: 98.6 F"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.619"
+                        app:layout_constraintStart_toEndOf="@+id/tv_normal_temp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_current" />
+
+
+
+                    <TextView
+
+                        android:drawableLeft="@drawable/ic_heat"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_normal_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="85dp"
+                        android:text="  Temp: 98.6 F"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_normal" />
+
+
+
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/tv_normal_heartRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="123dp"
+                        android:drawableLeft="@drawable/ic_heart"
+                        android:fontFamily="@font/montserrat"
+                        android:text=" BPM : 60-100"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_normal_temp" />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10dp"
+                app:cardElevation="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="199dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_health_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Status : "
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_suggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Suggestion" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+             <Button
+
+
+                 android:background="@android:color/white"
+                 android:id="@+id/bt_send_suggestion"
+                 android:text="Send"
+                 android:textSize="16sp"
+                 android:drawableRight="@drawable/ic_send"
+                 android:textColor="@android:color/black"
+                 android:fontFamily="@font/montserrat"
+                 android:layout_marginStart="16dp"
+                 android:layout_marginEnd="16dp"
+                 android:layout_marginTop="135dp"
+                 android:paddingRight="10dp"
+                 android:layout_alignParentStart="true"
+                 android:ems="10"
+                 android:layout_width="120dp"
+                 android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_time"
+                        android:id="@+id/last_seen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_alignParentStart="true"
+
+
+                        android:text="  Last Send" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="7dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="16dp"
+
+                        android:layout_marginRight="16dp"
+
+                        android:src="@drawable/ic_doctor"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"/>
+
+                    <TextView
+
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_nurse_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Nurse Details: "
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_name"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_nurse_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="56dp"
+                        android:text="  "
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+                    <TextView
+
+
+                        android:drawableLeft="@drawable/ic_call"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_nurse_Phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="56dp"
+                        android:text="  "
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="  "
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="100dp"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:id="@+id/nurse_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="7dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="16dp"
+
+                        android:layout_marginRight="16dp"
+
+                        android:src="@drawable/ic_doctor"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"/>
+
+                    <TextView
+
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_doctor_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Doctor's Details: "
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_name"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/tv_doctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="56dp"
+                        android:text="  "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_doctor_details" />
+
+                    <TextView
+
+
+                        android:drawableLeft="@drawable/ic_call"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@android:color/black"
+
+                        android:id="@+id/tv_doctorPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="56dp"
+                        android:text="  "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_doctorName" />
+
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="  "
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="100dp"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:id="@+id/doc_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

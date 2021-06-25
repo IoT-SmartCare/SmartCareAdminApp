@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin">
+
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <EditText
+
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_search"
+            android:fontFamily="@font/montserrat"
+            android:hint="Search patient"
+            android:paddingLeft="16sp"
+            android:paddingBottom="16sp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/offwhite"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:id="@+id/tv_admin2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16sp"
+            android:text="SmartCare Admin"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/search_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimaryDark"
+            android:paddingTop="8dp"
+
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_clear"
+            android:visibility="gone" />
+
+
+        <ImageView
+
+
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_search" />
+
+
+        <ImageView
+
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_logout" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:id="@+id/patient_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/offwhite"
+            android:paddingBottom="8dp"
+            app:spanCount="2"
+            tools:listitem="@layout/item_patient_data" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+
+
+            android:visibility="gone"
+            android:src="@drawable/ic_add" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
